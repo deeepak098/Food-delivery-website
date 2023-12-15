@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar styling */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+.logo{
+    border: 2px solid transparent;
+    border-radius: 66%;
+}
+#logo{
+    margin: 10px 30px;
+}
+#logo img {
+    width: 108px;
+    height: 100px;
+    margin: 5px 10px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'baloo bhai' cursive;
+}
+#navbar::before{
+    background-color:black;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#navbar ul li{
+    /* word-spacing: 25px; */
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    background: url("/bg3.jpg") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+#home h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+#home p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* new background for boxes */
+/* #services-trending::before{
+    background: url("/bg1.jpg") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 117%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.55;
+} */
+/* services section */
+#services{
+    margin: 30px;
+    display: flex;
+    background: url(bg7.jpg) no-repeat center center/cover;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 3px 6px;
+    border-radius: 30px;
+    background-color:aliceblue;
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+/* trending today */
+#trending{
+    margin: 30px;
+    display: flex;
+    background: url(bg7.jpg) no-repeat center center/cover ;
+}
+#trending .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 3px 6px;
+    border-radius: 30px;
+    background-color:aliceblue;
+}
+#trending .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+/* clients section */
+#clients-section{
+    /* position: relative; */
+    height: 300px;
+}
+#clients-section::before{
+    background: url("/bg2.jpg") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 42%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.95;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients img{
+    height: 90px;
+    padding: 45px;
+}
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+/* about us section */
+#heading{
+    background-color: rgb(36, 52, 69);
+    font-weight: 700;
+    opacity: 0.65;
+}
+#what ul{
+    padding-left: 50px;
+}
+#values ul{
+    padding-left: 50px;
+}
+#missions ul{
+    padding-left: 50px;
+}
+#what::before{
+    background: url("bg4.jpg") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 89%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.70;
+}
+#values::before{
+    background: url("bg8.jpg") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 52%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.70;
+}
+#missions::before{
+    background: url("bg9.jpg") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 42%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.65;
+}
+#we-do{
+    color: rgb(88, 37, 37);
+    font-weight: 700;
+    font-size: 1.9rem;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+#heading .h-about{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.we-do{
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: rgb(12, 15, 12);
+    /* text-shadow: 8px 5px 6px rgb(74, 40, 40); */
+}
+/* utility classes */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 10px
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 10px
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:navajowhite;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    text-emphasis: none;
+}
+.center{
+    text-align: center;
+}
